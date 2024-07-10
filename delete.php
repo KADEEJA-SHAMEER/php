@@ -13,12 +13,14 @@
    echo "database coonnnected";
  else 
    echo "not connected";
-if(issset($_POST['submit'])){
-   $BID=$POST['BOOK_ID'];
-   $sql=" DELETE FROM boob WHERE BOOK_ID='$BID'";
+if(isset($_POST['submit'])){
+   $BID=$_POST['BOOK_ID'];
+   $sql=" DELETE FROM book WHERE BOOK_ID='$BID'";
    $data=mysqli_query($dbcon,$sql);
-   if($data)
+   if($data){
+       echo "<br>";
        echo "one row deleted from table";
+   }
 }
 ?>
 </body>
