@@ -5,7 +5,7 @@
   else 
     echo "not connected";
 if(isset($_POST['SUBMIT'])){
-    $BID=$POST['BOOK_ID'];
+    $BID=$_POST['BOOK_ID'];
     $TIT=$_POST['TITLE'];
     $AUT=$_POST['AUTHOR'];
     $PUB=$_POST['PUBLISHER'];
