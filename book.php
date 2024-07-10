@@ -10,7 +10,7 @@ if(isset($_POST['SUBMIT'])){
     $AUT=$_POST['AUTHOR'];
     $PUB=$_POST['PUBLISHER'];
     $YEAR=$_POST['YEAR'];
-    $sql="INSERT INTO book VALUES($BID,'$TIT',$AUT','$PUB',$YEAR)";
+    $sql="INSERT INTO book VALUES($BID,'$TIT','$AUT','$PUB',$YEAR)";
     $data=mysqli_query($dbcon,$sql);
     if($data)
       {
