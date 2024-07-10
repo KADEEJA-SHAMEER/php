@@ -12,7 +12,7 @@ $data = mysqli_query($dbcon, $sql);
  echo "<th>Mark</th>";
  echo "</tr>";
  while ($row = mysqli_fetch_array($data)) {
- echo "<tr><form action=UpdateQuery.php method=post>";
+ echo "<tr><form action=updatequery.php method=post>";
  echo "<td><input type=text name=rollno value=".$row['studid']."></td>";
  echo "<td><input type=text name=stname value=".$row['StName']."></td>";
  echo "<td><input type=text name=stmark value=".$row['Marks']."></td>";
