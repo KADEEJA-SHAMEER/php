@@ -4,7 +4,7 @@
     echo "database coonnnected";
   else 
     echo "not connected";
-if(issset($_POST['SUBMIT'])){
+if(isset($_POST['SUBMIT'])){
     $BID=$POST['BOOK_ID'];
     $TIT=$_POST['TITLE'];
     $AUT=$_POST['AUTHOR'];
