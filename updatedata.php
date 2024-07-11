@@ -51,6 +51,7 @@ if(isset($_POST['submit'])){
     }
 
   }
+  include("display.php");
 ?>
 </form>
 </body>

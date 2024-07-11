@@ -29,6 +29,7 @@ if(isset($_POST['submit'])){
  }else{
     echo " database not connected";
  }
+ include("display.php");
 ?>
 </body>
 </html>

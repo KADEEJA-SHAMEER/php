@@ -32,5 +32,6 @@
   }
   else
     echo "not connected";
+include("display.php");
 ?>
 
