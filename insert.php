@@ -11,6 +11,8 @@
         <label> year: </label><input type="text" name="YEAR"><br>
         <input type="submit" name="SUBMIT"><br>
 </form>
+</body>
+</html>
 <?php
   $dbcon=mysqli_connect("localhost","root","","kadeeja");
   if($dbcon){
@@ -31,5 +33,4 @@
   else
     echo "not connected";
 ?>
-</body>
-</html>
+
