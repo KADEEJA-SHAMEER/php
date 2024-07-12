@@ -10,9 +10,7 @@
         <label> publisher: </label><input type="text" name="PUBLISHER"><br>
         <label> year: </label><input type="text" name="YEAR"><br>
         <input type="submit" name="SUBMIT"><br>
-</form>
-</body>
-</html>
+
 <?php
   $dbcon=mysqli_connect("localhost","root","","kadeeja");
   if($dbcon){
@@ -34,4 +32,8 @@
     echo "not connected";
 include("display.php");
 ?>
+<a href="library.php">click me to go back</a>
+</form>
+</body>
+</html>
 
