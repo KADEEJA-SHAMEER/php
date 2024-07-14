@@ -8,7 +8,7 @@
         <input type="submit"  name="submit"><br>
 </form>
 <?php
-$dbcon = mysqli_connect("localhost", "root", "", "kadeeja")or die("Error");
+$dbcon = mysqli_connect ("localhost", "root", "", "kadeeja")or die("Error");
 if($dbcon)
 {
 if(isset($_POST['submit']))
