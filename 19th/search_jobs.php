@@ -7,7 +7,8 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     $city = $_GET['city'];
     $title = $_GET['title'];
 
-    $sql = "SELECT * FROM jobs WHERE skills_required LIKE '%$skills%' AND city LIKE '%$city%' AND title LIKE '%$title%'";
+    $sql = "SELECT * FROM jobs WHERE skills_required LIKE '%$skills%' AND city LIKE '%$city%' AND title 
+    LIKE '%$title%'";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {

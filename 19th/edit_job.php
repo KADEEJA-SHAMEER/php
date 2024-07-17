@@ -8,7 +8,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_COOKIE['user_id']) && $_COOK
     $skills_required = $_POST['skills_required'];
     $city = $_POST['city'];
 
-    $sql = "UPDATE jobs SET title='$title', description='$description', skills_required='$skills_required', city='$city' WHERE id='$job_id' AND provider_id='{$_COOKIE['user_id']}'";
+    $sql = "UPDATE jobs SET title='$title', description='$description', skills_required='$skills_required',
+     city='$city' WHERE id='$job_id' AND provider_id='{$_COOKIE['user_id']}'";
 
     if ($conn->query($sql) === TRUE) {
         echo "<script>alert('Job updated successfully!')</script>";

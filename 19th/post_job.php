@@ -8,7 +8,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_COOKIE['user_id']) && $_COOK
     $city = $_POST['city'];
     $provider_id = $_COOKIE['user_id'];
 
-    $sql = "INSERT INTO jobs (title, description, skills_required, city, provider_id) VALUES ('$title', '$description', '$skills_required', '$city', '$provider_id')";
+    $sql = "INSERT INTO jobs (title, description, skills_required, city, provider_id) VALUES ('$title', '$description',
+     '$skills_required', '$city', '$provider_id')";
 
     if ($conn->query($sql) === TRUE) {
         echo "<scirpt>alert('Job posted successfully!')</script>";

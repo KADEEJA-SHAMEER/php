@@ -1,5 +1,3 @@
-
-
 <?php
 
 if (isset($_COOKIE['user_id']) && isset($_COOKIE['username']) && isset($_COOKIE['user_type'])) {
@@ -22,7 +20,7 @@ if (isset($_COOKIE['user_id']) && isset($_COOKIE['username']) && isset($_COOKIE[
     require_once ("connect.php");
 
 
-    $sql = "SELECT * FROM jobs WHERE provider_id='{$_COOKIE['user_id']}'";
+    $sql = "SELECT * FROM jobs WHERE provider_id='{$_COOKIE['user_id'] }'";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
         $jobs = [];
@@ -44,7 +42,7 @@ if (isset($_COOKIE['user_id']) && isset($_COOKIE['username']) && isset($_COOKIE[
                 <p><strong>City:</strong> <?php echo htmlspecialchars($job['city']); ?></p>
                 <a href="edit_job.php?job_id=<?php echo $job['id']; ?>">Edit</a>
                 <a href="delete_job.php?job_id=<?php echo $job['id']; ?>"
-                    onclick="return confirm('Are you sure you want to delete this job?');">Delete</a>
+                    onclick="return confirm('Are you sure you want to delete this job?');" >Delete</a>
             </li>
         <?php endforeach; ?>
     </ul>
