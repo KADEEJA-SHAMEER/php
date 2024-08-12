@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.div1{
+    display:flex;
+     box-shadow:  0 0 10px rgba(84, 13,165, 0.903);
+}
+button{
+    border-radius: 5px;
+}
