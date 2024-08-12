@@ -1,7 +1,8 @@
 <?php
 include 'connection.php';
 
-if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['id'])) {
+if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['id']))
+ {
     $student_id = $_GET['id'];
 
     // Fetch student details from the database
@@ -27,7 +28,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['update'])) {
     $student_id = $_POST['student_id'];
 
     // Update student details in the database
-    $sql = "UPDATE students SET name='$name', date_of_birth='$date_of_birth', gender='$gender', email='$email', batch_id=$batch_id WHERE id=$student_id";
+    $sql = "UPDATE students SET name='$name', date_of_birth='$date_of_birth', gender='$gender', email='$email',
+     batch_id=$batch_id WHERE id=$student_id";
     if ($conn->query($sql) === TRUE) {
         header('Location: index.php');
         exit();
@@ -51,7 +53,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['update'])) {
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" value="<?php echo $student['name']; ?>" required><br><br>
         <label for="date_of_birth">Date of Birth:</label>
-        <input type="date" id="date_of_birth" name="date_of_birth" value="<?php echo $student['date_of_birth']; ?>" required><br><br>
+        <input type="date" id="date_of_birth" name="date_of_birth" value="<?php echo $student['date_of_birth']; ?>" 
+        required><br><br>
         <label for="gender">Gender:</label>
         <select id="gender" name="gender" required>
             <option value="Male" <?php echo $student['gender'] == 'Male' ? 'selected' : ''; ?>>Male</option>
@@ -66,7 +69,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['update'])) {
             $batch_sql = "SELECT id, batch_name FROM batches";
             $batch_result = $conn->query($batch_sql);
             while ($batch_row = $batch_result->fetch_assoc()) {
-                echo "<option value='" . $batch_row['id'] . "' " . ($batch_row['id'] == $student['batch_id'] ? 'selected' : '') . ">" . $batch_row['batch_name'] . "</option>";
+                echo "<option value='" . $batch_row['id'] . "' " . ($batch_row['id'] == $student['batch_id'] ?
+                 'selected' : '') . ">" . $batch_row['batch_name'] . "</option>";
             }
             ?>
         </select><br><br>

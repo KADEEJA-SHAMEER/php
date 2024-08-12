@@ -90,7 +90,7 @@ $result = $conn->query($sql);
                     echo "<td>" . $row['batch_name'] . "</td>";
                     echo "<td>" . $row['year'] . "</td>";
                     echo "<td>
-                            <a href='edit_student.php?id=" . $row['id'] . "'>Edit</a> |
+                            <a href='edit_student.php?id=" . $row['id'] . "'> Edit</a> |
                             <a href='delete_student.php?student_id=" . $row['id'] . "' onclick='return confirm(\"Are you sure you want to delete this student?\");'>Delete</a>
                           </td>";
                     echo "</tr>";
