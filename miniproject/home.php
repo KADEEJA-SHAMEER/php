@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="div3">
     <div class="div1">
         <img src="./logo.svg" width=20%></div>
     <div >
@@ -14,8 +15,9 @@
             <button type=submit name=login >LOGIN </button>
        </form>
 </div> 
-<!--<div>
+</div>
+<div class="txt1">
     <h1> WHERE WORKS<BR>MEET FREEDOM</h1>
-</div>-->
+</div>
 </body>
 </html>
