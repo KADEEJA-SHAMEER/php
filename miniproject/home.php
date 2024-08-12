@@ -8,7 +8,9 @@
 <body>
     <div claas="div1">
         <img src="./logo.svg" width=20%>
-        <button type=submit >LOGIN</button>
+        <form action="login.php" method="post">
+            <input type=submit name=submit value=LOGIN>
+</form>
 </div> 
 </body>
 </html>

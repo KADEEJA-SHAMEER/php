@@ -6,7 +6,7 @@
 body{
      font-size: medium;
      height: 100vh;
-    background-image: url('./loginimage.jpeg');
+    background-image: url('./loginimage2.jpeg');
     background-size: cover;
 }
 
@@ -17,6 +17,7 @@ button{
     border: none;
     padding: 10px;
     width: 50%;
+    box-shadow:0 0 20px black;
 }
 form {
     height: 50%;
@@ -28,14 +29,16 @@ form {
     justify-content: space-around;
     align-items: center;
     gap: 3px;
-    background-color: rgb(4, 4, 4);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 h1 {
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: rgb(5, 5, 5);
     padding: 10px 0px;
 }
 form input {
+    border: none;
+    box-shadow:0 0 20px black;
     width: 70%;
     padding: 10px;
     border-radius:5px;
@@ -43,7 +46,7 @@ form input {
 }
 .div2 {
     width: 100%;
-    color:white;
+    color:rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,6 +61,6 @@ form input {
     align-items: center;
 }
 a {
-    color: #ffffff; /* Red */
+    color: #000000; /* Red */
   }
   
